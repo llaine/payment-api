@@ -1,0 +1,383 @@
+  [1m[35m (3.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `payment-api_test`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `payment-api_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (27.3ms)[0m  [1m[35mCREATE TABLE `contracts` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `user` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE `payments` (`id` int AUTO_INCREMENT PRIMARY KEY, `contract_id` int, `description` varchar(255), `value` int, `time` datetime, `is_imported` tinyint(1), `is_deleted` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_payments_on_contract_id` USING btree (`contract_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (31.8ms)[0m  [1m[35mALTER TABLE `payments` ADD CONSTRAINT `fk_rails_9215ad6069`
+FOREIGN KEY (`contract_id`)
+  REFERENCES `contracts` (`id`)
+[0m
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) COLLATE utf8_general_ci PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20170110140857')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170110140222');
+
+[0m
+  [1m[35m (26.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) COLLATE utf8_general_ci PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'test', '2017-01-10 16:21:10', '2017-01-10 16:21:10')[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:21:10', '2017-01-10 16:21:10')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:21:10', '2017-01-10 16:21:10')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 19.9ms)
+  [1m[35m (12.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:21:52', '2017-01-10 16:21:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.5ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:21:52', '2017-01-10 16:21:52')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 3.6ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:22:32', '2017-01-10 16:22:32')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:22:32', '2017-01-10 16:22:32')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:23:10', '2017-01-10 16:23:10')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:23:11', '2017-01-10 16:23:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:25:08', '2017-01-10 16:25:08')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:25:08', '2017-01-10 16:25:08')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:29:21', '2017-01-10 16:29:21')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:29:21', '2017-01-10 16:29:21')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:29:52', '2017-01-10 16:29:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:29:52', '2017-01-10 16:29:52')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:31:30', '2017-01-10 16:31:30')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:31:30', '2017-01-10 16:31:30')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:32:48', '2017-01-10 16:32:48')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:33:04', '2017-01-10 16:33:04')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"description"=>"new description", "is_deleted"=>"false", "is_imported"=>"false", "time"=>"2017-01-10", "value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:33:04', '2017-01-10 16:33:04')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.1ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:33:48', '2017-01-10 16:33:48')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Started POST "/contracts/1/payments" for 127.0.0.1 at 2017-01-10 17:33:48 +0100
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2017-01-10", "value"=>"100", "description"=>"new description", "is_imported"=>"false", "is_deleted"=>"false", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:33:48', '2017-01-10 16:33:48')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:34:50', '2017-01-10 16:34:50')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:35:06', '2017-01-10 16:35:06')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:36:43', '2017-01-10 16:36:43')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:36:55', '2017-01-10 16:36:55')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Started POST "/contracts/1/payments" for 127.0.0.1 at 2017-01-10 17:36:55 +0100
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2017-01-10", "value"=>"100", "description"=>"new description", "is_imported"=>"false", "is_deleted"=>"false", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:36:55', '2017-01-10 16:36:55')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.5ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:37:06', '2017-01-10 16:37:06')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Started POST "/contracts/1/payments" for 127.0.0.1 at 2017-01-10 17:37:06 +0100
+Processing by PaymentsController#create as JSON
+  Parameters: {"id"=>"1", "time"=>"2017-01-10", "value"=>"100", "description"=>"new description", "is_imported"=>"false", "is_deleted"=>"false", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameters: id, format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `description`, `value`, `time`, `is_imported`, `is_deleted`, `created_at`, `updated_at`) VALUES (1, 'new description', 100, '2017-01-10 00:00:00', 0, 0, '2017-01-10 16:37:06', '2017-01-10 16:37:06')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:39:16', '2017-01-10 16:39:16')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:39:25', '2017-01-10 16:39:25')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.5ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:39:48', '2017-01-10 16:39:48')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.1ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:40:44', '2017-01-10 16:40:44')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.6ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.5ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:40:51', '2017-01-10 16:40:51')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.6ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:43:28', '2017-01-10 16:43:28')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 20.1ms)
+  [1m[35m (21.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:43:44', '2017-01-10 16:43:44')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 18520ms (ActiveRecord: 3.7ms)
+  [1m[35m (6.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (5.0ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Started POST "/contracts/1/payments" for 127.0.0.1 at 2017-01-10 17:50:29 +0100
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:50:29', '2017-01-10 16:50:29')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 20.2ms)
+  [1m[35m (17.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.9ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.9ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as HTML
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:56:37', '2017-01-10 16:56:37')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 20.2ms)
+  [1m[35m (5.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:56:55', '2017-01-10 16:56:55')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.2ms)
+Completed 201 Created in 38ms (Views: 5.1ms | ActiveRecord: 6.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.7ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:57:21', '2017-01-10 16:57:21')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.2ms)
+Completed 201 Created in 36ms (Views: 4.8ms | ActiveRecord: 2.6ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[35m (6.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 16:59:53', '2017-01-10 16:59:53')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.6ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.8ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 16:59:53', '2017-01-10 16:59:53')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.3ms)
+Completed 201 Created in 83ms (Views: 6.3ms | ActiveRecord: 21.6ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (5.7ms)[0m  [1m[31mROLLBACK[0m

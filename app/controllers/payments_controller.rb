@@ -2,11 +2,10 @@ class PaymentsController < ApplicationController
   before_action :set_contract
   before_action :set_payment, only: [:show, :update, :destroy]
 
-
   # GET /payments
   # GET /payments.json
   def index
-    @payments = @contract.payments # Anonymous scope
+    @payments = @contract.payments
     @payments = @payments.date_filter(params[:from], params[:to]) if params[:from].present? && params[:to].present?
     @payment_presenter = PaymentPresenter.new(@payments)
   end
@@ -22,7 +21,7 @@ class PaymentsController < ApplicationController
     @payment = @contract.payments.new(payment_params)
 
     if @payment.save
-      render :show, status: :created, location: @payment
+      render :show, status: :created, location: url_for([@contract, @payment])
     else
       render json: @payment.errors, status: :unprocessable_entity
     end
@@ -32,7 +31,7 @@ class PaymentsController < ApplicationController
   # PATCH/PUT /payments/1.json
   def update
     if @payment.update(payment_params)
-      render :show, status: :ok, location: @payment
+      render :show, status: :ok, location: contract_payment_path(@payment)
     else
       render json: @payment.errors, status: :unprocessable_entity
     end
@@ -51,11 +50,11 @@ class PaymentsController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_payment
-      @payment = @contract.find(params[:id])
+      @payment = @contract.payments.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def payment_params
-      params.require(:payment).permit(:contract_id, :description, :value, :time, :is_imported, :is_deleted)
+      params.permit(:contract_id, :description, :value, :time, :is_imported, :is_deleted)
     end
 end
