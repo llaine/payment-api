@@ -19,9 +19,9 @@ end
 def generate_description(value)
   case
     when value > 0
-      "Rent payment"
+      'Rent payment'
     else
-      "Rent to be paid"
+      'Rent to be paid'
   end
 end
 
