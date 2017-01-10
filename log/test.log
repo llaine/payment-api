@@ -381,3 +381,45 @@ Completed 201 Created in 83ms (Views: 6.3ms | ActiveRecord: 21.6ms)
   [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
   [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
   [1m[35m (5.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 17:10:05', '2017-01-10 17:10:05')[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 17:10:05', '2017-01-10 17:10:05')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.3ms)
+Completed 201 Created in 66ms (Views: 6.0ms | ActiveRecord: 20.8ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (5.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-10 17:10:09', '2017-01-10 17:10:09')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-10 17:10:09', '2017-01-10 17:10:09')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.3ms)
+Completed 201 Created in 44ms (Views: 5.5ms | ActiveRecord: 2.9ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
