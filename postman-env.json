@@ -1,0 +1,16 @@
+{
+  "id": "dd58d4de-1f0a-5896-d79a-2df57c0a4a3b",
+  "name": "Home environment",
+  "values": [
+    {
+      "key": "host",
+      "value": "http://localhost:3000",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "timestamp": 1484073054279,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2017-01-10T19:19:05.246Z",
+  "_postman_exported_using": "Postman/4.9.2"
+}

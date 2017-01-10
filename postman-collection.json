@@ -1,0 +1,139 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Home",
+		"_postman_id": "85c561ea-98f7-b3fc-b59a-20a6bac84edf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get payments for a specific contract",
+			"request": {
+				"url": "{{host}}/contracts/1/payments",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new payment for a specific contract",
+			"request": {
+				"url": "{{host}}/contracts/1/payments",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "value",
+							"value": "-100",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "time",
+							"value": "2017-01-01",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "Rent to be paid",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an existing payment for a specific contract",
+			"request": {
+				"url": "{{host}}/contracts/1/payments/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "value",
+							"value": "1000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "time",
+							"value": "2017-01-01",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "Rent to be paid",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit an existing payment for a specific contract copy",
+			"request": {
+				"url": "{{host}}/contracts/1/payments/3",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "value",
+							"value": "1000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "time",
+							"value": "2017-01-01",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "Rent to be paid",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
