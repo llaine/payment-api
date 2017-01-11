@@ -96,7 +96,7 @@
 				{
 					"name": "Get payments for a specific contract",
 					"request": {
-						"url": "{{host}}/contracts/1/payments",
+						"url": "{{host}}/contracts/2/payments",
 						"method": "GET",
 						"header": [],
 						"body": {},
@@ -107,7 +107,7 @@
 				{
 					"name": "Create a new payment for a specific contract",
 					"request": {
-						"url": "{{host}}/contracts/1/payments",
+						"url": "{{host}}/contracts/2/payments",
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -217,6 +217,17 @@
 								}
 							]
 						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Filter payments",
+					"request": {
+						"url": "{{host}}/contracts/2/payments?from=2017-01-01&to=2017-01-01",
+						"method": "GET",
+						"header": [],
+						"body": {},
 						"description": ""
 					},
 					"response": []
