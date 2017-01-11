@@ -5,9 +5,7 @@
 Import the [postman's](https://www.getpostman.com/) file `postman-collection.json` and `postman-env.json` to your postman app to test the API.
 - `postman-env.json` is the environment file
 - `postman-collection.json` contains the api calls.
-
-Four api calls located under the name collection's name __home__ are present. 
-
+ 
 # Code
  
  The majority of the code is located under `app/` folder.
