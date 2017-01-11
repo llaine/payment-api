@@ -6,7 +6,6 @@
 #
 default: &default
   adapter: mysql2
-  encoding: utf8mb4
   pool: 10
   username: root
   password: root
