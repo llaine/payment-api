@@ -12,14 +12,14 @@ RSpec.describe PaymentPresenter do
 
   describe '#sum' do
     it 'sum all the payment\'s value' do
-      payments = [Payment.new(value:1), Payment.new(value:2)]
+      payments = [Payment.new(value: 1), Payment.new(value: 2)]
       p = PaymentPresenter.new(payments)
 
       expect(p.sum).to eq(3)
     end
 
     it 'works with negative values' do
-      payments =  [Payment.new(value:100), Payment.new(value:-100)]
+      payments = [Payment.new(value: 100), Payment.new(value: -100)]
       p = PaymentPresenter.new(payments)
 
       expect(p.sum).to eq(0)

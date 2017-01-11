@@ -7,25 +7,25 @@ RSpec.describe PaymentsController do
   end
 
   def index_payment(attributes={})
-    get :index, params: { contract_id: Contract.first.id }.merge(attributes), format: :json
+    get :index, params: {contract_id: Contract.first.id}.merge(attributes), format: :json
   end
 
   def create_payment(attributes={})
-    post :create, params: { contract_id: Contract.first.id }.merge(attributes), format: :json
+    post :create, params: {contract_id: Contract.first.id}.merge(attributes), format: :json
   end
 
   def edit_payment(attributes)
-    put :update, params: { contract_id: Contract.first.id }.merge(attributes), format: :json
+    put :update, params: {contract_id: Contract.first.id}.merge(attributes), format: :json
   end
 
   def delete_payment(attributes)
-    delete :destroy, params: { contract_id: Contract.first.id }.merge(attributes), format: :json
+    delete :destroy, params: {contract_id: Contract.first.id}.merge(attributes), format: :json
   end
 
 
   describe '#index' do
     it 'get list of payment' do
-      2.times { create_payment(value:100) }
+      2.times { create_payment(value: 100) }
       index_payment
 
       expect(assigns(:payments).length).to eq(2)
@@ -90,7 +90,7 @@ RSpec.describe PaymentsController do
 
   describe '#update' do
     it 'update a current payment' do
-      create_payment(value:100)
+      create_payment(value: 100)
       newest_payment = Payment.last
 
       new_value = 300
