@@ -1,4 +1,4 @@
-# Payment-api [![Build Status](https://travis-ci.org/llaine/payment-api.svg?branch=master)](https://travis-ci.org/llaine/payment-api)
+# Payment-api [![Build Status](https://travis-ci.org/llaine/payment-api.svg?branch=master)](https://travis-ci.org/llaine/payment-api) [![Code Climate](https://codeclimate.com/github/llaine/payment-api/badges/gpa.svg)](https://codeclimate.com/github/llaine/payment-api)
 
 # How to test the API
 
