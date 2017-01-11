@@ -1,19 +1,18 @@
 # Payment-api [![Build Status](https://travis-ci.org/llaine/payment-api.svg?branch=master)](https://travis-ci.org/llaine/payment-api)
 
-# How to 
+# How to test the API
 
-1. Import the [postman's](https://www.getpostman.com/) file `postman-collection.json` and `postman-env.json` to 
-    test the API.
-    - `postman-env.json` is the environment file
-    - `postman-collection.json` contains the api calls.
-2. The api is hosted in heroku free machine under https://whispering-atoll-62299.herokuapp.com/
+Import the [postman's](https://www.getpostman.com/) file `postman-collection.json` and `postman-env.json` to your postman app to test the API.
+- `postman-env.json` is the environment file
+- `postman-collection.json` contains the api calls.
+
+Four api calls located under the name collection's name __home__ are present. 
 
 # Code
  
  The majority of the code is located under `app/` folder.
-  
 
- # Code quality
+# Code quality
  
- - The tests are located in the `spec` and executed with travis-ci. 
+ - The tests are located in the `spec` and executed with travis-ci. Click [here](https://travis-ci.org/llaine/payment-api) to see them pass.
 
