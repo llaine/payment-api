@@ -48,6 +48,6 @@ class ContractsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contract_params
-      params.fetch(:contract, :name, :user)
+      params.permit(:name, :user)
     end
 end
