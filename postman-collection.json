@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "Home",
-		"_postman_id": "85c561ea-98f7-b3fc-b59a-20a6bac84edf",
+		"_postman_id": "f83d90bc-68f3-47f6-a186-b3d5ee425c27",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -29,7 +29,7 @@
 					"formdata": [
 						{
 							"key": "value",
-							"value": "-100",
+							"value": "200",
 							"type": "text",
 							"enabled": true
 						},
@@ -99,7 +99,7 @@
 		{
 			"name": "Edit an existing payment for a specific contract copy",
 			"request": {
-				"url": "{{host}}/contracts/1/payments/3",
+				"url": "{{host}}/contracts/1/payments/2",
 				"method": "PUT",
 				"header": [],
 				"body": {
