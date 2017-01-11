@@ -423,3 +423,1995 @@ Completed 201 Created in 44ms (Views: 5.5ms | ActiveRecord: 2.9ms)
   [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
   [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
   [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (25.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#index as HTML
+Completed 406 Not Acceptable in 29ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 21 LIMIT 1[0m
+Completed 406 Not Acceptable in 33ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `contracts`[0m
+Processing by ContractsController#create as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by ContractsController#create as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by ContractsController#create as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (10.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#update as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}, "id"=>"24"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 24 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#update as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}, "id"=>"25"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 25 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `contracts`[0m
+Processing by ContractsController#destroy as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 28 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM `contracts` WHERE `contracts`.`id` = 28[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for ContractsController#destroy, rendering head :no_content
+Completed 204 No Content in 45ms (ActiveRecord: 1.7ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `contracts`[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#destroy as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 29 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `contracts` WHERE `contracts`.`id` = 29[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for ContractsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.6ms)
+  [1m[35m (6.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by HomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.3ms)
+Completed 201 Created in 63ms (Views: 6.3ms | ActiveRecord: 26.3ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 11ms (Views: 0.5ms | ActiveRecord: 27.6ms)
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.3ms)
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 27.9ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (6.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:27 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:27', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:27 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:27', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:27 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:27', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.1ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-12-11 10:02:27 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+  [1m[36mPayment Load (6.5ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-12-11 10:02:27 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (12.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:27 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:27', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:27 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:27', '2017-01-11 10:02:27', '2017-01-11 10:02:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-11-11 10:02:28 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-11-11 10:02:28 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.5ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:28 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:28 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:28 UTC", "to"=>"2016-11-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:28 UTC' AND time <= '2016-11-11 10:02:28 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 2.4ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:28 UTC", "to"=>"2016-12-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 2.7ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:28 UTC' AND time <= '2016-12-11 10:02:28 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:28 UTC", "to"=>"2016-10-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:28 UTC' AND time <= '2016-10-11 10:02:28 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:28', '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-08-11 10:02:28 UTC", "to"=>"2016-07-11 10:02:28 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-08-11 10:02:28 UTC' AND time <= '2016-07-11 10:02:28 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (6.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#update as JSON
+  Parameters: {"value"=>"300", "contract_id"=>"1", "id"=>"25"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 25 LIMIT 1[0m
+Unpermitted parameters: id, format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `payments` SET `value` = 300 WHERE `payments`.`id` = 25[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 25 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (1.0ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:02:28', '2017-01-11 10:02:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 11ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#destroy as JSON
+  Parameters: {"contract_id"=>"1", "id"=>"26"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 26 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `payments` WHERE `payments`.`id` = 26[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for PaymentsController#destroy, rendering head :no_content
+Completed 204 No Content in 30ms (Views: 0.4ms | ActiveRecord: 2.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 26 LIMIT 1[0m
+  [1m[35m (12.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/contracts" for 127.0.0.1 at 2017-01-11 11:02:28 +0100
+Processing by ContractsController#index as HTML
+Completed 406 Not Acceptable in 23ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#index as HTML
+Completed 406 Not Acceptable in 25ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 32 LIMIT 1[0m
+Completed 406 Not Acceptable in 30ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `contracts`[0m
+Processing by ContractsController#create as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by ContractsController#create as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by ContractsController#create as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#update as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}, "id"=>"35"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 35 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#update as HTML
+  Parameters: {"contract"=>{"name"=>"name", "user"=>"user"}, "id"=>"36"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 36 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `contracts`[0m
+Processing by ContractsController#destroy as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 39 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `contracts` WHERE `contracts`.`id` = 39[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for ContractsController#destroy, rendering head :no_content
+Completed 204 No Content in 47ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `contracts`[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`name`, `user`, `created_at`, `updated_at`) VALUES ('name', 'user', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContractsController#destroy as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 40 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `contracts` WHERE `contracts`.`id` = 40[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for ContractsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.6ms)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by HomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.6ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (4.5ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.3ms)
+Completed 201 Created in 45ms (Views: 5.3ms | ActiveRecord: 7.6ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 8.3ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.2ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 8.6ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 7ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-12-11 10:02:43 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.6ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-12-11 10:02:43 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 8ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-11-11 10:02:43 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.7ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-11-11 10:02:43 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 2.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:43 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.7ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:43 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 12ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:43 UTC", "to"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:43 UTC' AND time <= '2016-11-11 10:02:43 UTC')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:43 UTC", "to"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:43 UTC' AND time <= '2016-12-11 10:02:43 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 2.1ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:02:43 UTC", "to"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.1ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:02:43 UTC' AND time <= '2016-10-11 10:02:43 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:02:43', '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.1ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-08-11 10:02:43 UTC", "to"=>"2016-07-11 10:02:43 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-08-11 10:02:43 UTC' AND time <= '2016-07-11 10:02:43 UTC')[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#update as JSON
+  Parameters: {"value"=>"300", "contract_id"=>"1", "id"=>"51"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 51 LIMIT 1[0m
+Unpermitted parameters: id, format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `payments` SET `value` = 300 WHERE `payments`.`id` = 51[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 51 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:02:43', '2017-01-11 10:02:43')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#destroy as JSON
+  Parameters: {"contract_id"=>"1", "id"=>"52"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 52 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `payments` WHERE `payments`.`id` = 52[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for PaymentsController#destroy, rendering head :no_content
+Completed 204 No Content in 29ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 52 LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/contracts" for 127.0.0.1 at 2017-01-11 11:02:43 +0100
+Processing by ContractsController#index as JSON
+  Rendering contracts/index.json.jbuilder
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT `contracts`.* FROM `contracts`[0m
+  Rendered contracts/_contract.json.jbuilder (0.7ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/index.json.jbuilder (12.1ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by HomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.5ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.3ms)
+Completed 201 Created in 43ms (Views: 5.0ms | ActiveRecord: 2.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 3.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.2ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 3.9ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-12-11 10:03:40 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-12-11 10:03:40 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-11-11 10:03:40 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-11-11 10:03:40 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.7ms | ActiveRecord: 1.2ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.3ms | ActiveRecord: 1.9ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:03:40 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.6ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.1ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:03:40 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:03:40 UTC", "to"=>"2016-11-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:03:40 UTC' AND time <= '2016-11-11 10:03:40 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:03:40 UTC", "to"=>"2016-12-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.8ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:03:40 UTC' AND time <= '2016-12-11 10:03:40 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:03:40', '2017-01-11 10:03:40', '2017-01-11 10:03:40')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:03:40 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:03:40', '2017-01-11 10:03:41', '2017-01-11 10:03:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:03:41 UTC", "to"=>"2016-10-11 10:03:41 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.1ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.5ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:03:41 UTC' AND time <= '2016-10-11 10:03:41 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:03:41 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:03:41', '2017-01-11 10:03:41', '2017-01-11 10:03:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:03:41 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:03:41', '2017-01-11 10:03:41', '2017-01-11 10:03:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 4ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:03:41 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:03:41', '2017-01-11 10:03:41', '2017-01-11 10:03:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-08-11 10:03:41 UTC", "to"=>"2016-07-11 10:03:41 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-08-11 10:03:41 UTC' AND time <= '2016-07-11 10:03:41 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:03:41', '2017-01-11 10:03:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:03:41', '2017-01-11 10:03:41')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#update as JSON
+  Parameters: {"value"=>"300", "contract_id"=>"1", "id"=>"77"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 77 LIMIT 1[0m
+Unpermitted parameters: id, format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `payments` SET `value` = 300 WHERE `payments`.`id` = 77[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 77 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:03:41', '2017-01-11 10:03:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#destroy as JSON
+  Parameters: {"contract_id"=>"1", "id"=>"78"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 78 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `payments` WHERE `payments`.`id` = 78[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for PaymentsController#destroy, rendering head :no_content
+Completed 204 No Content in 45ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 78 LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/contracts" for 127.0.0.1 at 2017-01-11 11:03:41 +0100
+Processing by ContractsController#index as JSON
+  Rendering contracts/index.json.jbuilder
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT `contracts`.* FROM `contracts`[0m
+  Rendered contracts/_contract.json.jbuilder (0.7ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.3ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/_contract.json.jbuilder (0.2ms)
+  Rendered contracts/index.json.jbuilder (12.2ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by HomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `contracts` (`created_at`, `updated_at`) VALUES ('2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.3ms)
+Completed 201 Created in 44ms (Views: 5.2ms | ActiveRecord: 2.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.2ms)
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 3.3ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `payments` WHERE `payments`.`contract_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.1ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-12-11 10:04:11 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-12-11 10:04:11 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-11-11 10:04:11 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 2.1ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-11-11 10:04:11 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:04:11 UTC", "to"=>"2017-01-11", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:04:11 UTC' AND time <= '2017-01-11')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.5ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:04:11 UTC", "to"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:04:11 UTC' AND time <= '2016-11-11 10:04:11 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:04:11 UTC", "to"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.4ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:04:11 UTC' AND time <= '2016-12-11 10:04:11 UTC')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.8ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.5ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-10-11 10:04:11 UTC", "to"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.1ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 2.8ms)
+  [1m[36mPayment Load (0.6ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-10-11 10:04:11 UTC' AND time <= '2016-10-11 10:04:11 UTC')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-12-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-12-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-11-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-11-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"time"=>"2016-10-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `time`, `created_at`, `updated_at`) VALUES (1, '2016-10-11 10:04:11', '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#index as JSON
+  Parameters: {"from"=>"2016-08-11 10:04:11 UTC", "to"=>"2016-07-11 10:04:11 UTC", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  Rendering payments/index.json.jbuilder
+  Rendered payments/index.json.jbuilder (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND (time >= '2016-08-11 10:04:11 UTC' AND time <= '2016-07-11 10:04:11 UTC')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.5ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.1ms)
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `payments` LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"value"=>"100", "contract_id"=>"1"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `value`, `created_at`, `updated_at`) VALUES (1, 100, '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#update as JSON
+  Parameters: {"value"=>"300", "contract_id"=>"1", "id"=>"103"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 103 LIMIT 1[0m
+Unpermitted parameters: id, format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `payments` SET `value` = 300 WHERE `payments`.`id` = 103[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 103 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#create as JSON
+  Parameters: {"contract_id"=>"1"}
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `payments` (`contract_id`, `created_at`, `updated_at`) VALUES (1, '2017-01-11 10:04:11', '2017-01-11 10:04:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering payments/show.json.jbuilder
+  Rendered payments/show.json.jbuilder (0.0ms)
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` ORDER BY `payments`.`id` DESC LIMIT 1[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+Processing by PaymentsController#destroy as JSON
+  Parameters: {"contract_id"=>"1", "id"=>"104"}
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT  `contracts`.* FROM `contracts` WHERE `contracts`.`id` = 1 ORDER BY `contracts`.`id` ASC LIMIT 1[0m
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`contract_id` = 1 AND `payments`.`id` = 104 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `payments` WHERE `payments`.`id` = 104[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for PaymentsController#destroy, rendering head :no_content
+Completed 204 No Content in 45ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT  `payments`.* FROM `payments` WHERE `payments`.`id` = 104 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
