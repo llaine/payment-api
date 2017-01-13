@@ -6,6 +6,6 @@ class PaymentPresenter
   end
 
   def sum
-    payments.map(&:value).map(&:to_i).reduce(0, :+)
+    payments.sum(&:value)
   end
 end
